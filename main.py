@@ -68,9 +68,12 @@ def start():
                     time.sleep(50)
                 except:
                     pass
-            nextButton = driver.find_element_by_css_selector('button.artdeco-pagination__button--next')
-            nextButton.click()
-            time.sleep(10)
+            try: 
+                nextButton = driver.find_element_by_css_selector('button.artdeco-pagination__button--next')
+                nextButton.click()
+                time.sleep(10)
+            except:
+                p=10
             
             
 
